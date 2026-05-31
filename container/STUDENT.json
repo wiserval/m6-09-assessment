@@ -1,0 +1,19 @@
+{
+    "first_name": "Ali",
+    "last_name": "Aligulu",
+    "team": "ali-aligulu",
+    "model": {
+        "framework": "yolo26",
+        "variant": "yolo26m",
+        "imgsz": 640,
+        "epochs_total": 150,
+        "tricks": [
+            "mosaic",
+            "mixup",
+            "cos_lr",
+            "hsv_tuning",
+            "hard_negatives_600"
+        ]
+    },
+    "notes": "3927-pair dataset: 3327 photorealistic cats + 600 COCO hard-negatives. Run 1 selected as best: 150 epochs, mAP@0.5=0.887 val. Run 2 two-stage training did not recover after backbone unfreezing due to lr0=0.01 being too aggressive on an already-converged Stage 1 checkpoint. erasing=0.0 for training stability."
+}
