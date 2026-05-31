@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large model files
+*.onnx
+runs/*/weights/*.pt
+!runs/cats_v2_run1/weights/best.pt
+
+# Dataset
+data/
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Colab artifacts
+*.cache
+
+# Project Content
+final_project_bundle
